@@ -1,0 +1,38 @@
+h1 {
+  @apply text-6xl font-extrabold;
+}
+
+h2 {
+  @apply text-5xl font-extrabold;
+}
+h3 {
+  @apply text-4xl font-extrabold;
+}
+
+h4 {
+  @apply text-3xl font-extrabold;
+}
+
+h5 {
+  @apply text-2xl font-extrabold;
+}
+
+h6 {
+  @apply text-xl font-extrabold;
+}
+
+.link {
+  @apply underline text-gray-500 dark:text-gray-400;
+}
+
+blockquote {
+  @apply border-l-gray-300 dark:border-l-gray-800  border-l-4 pl-2;
+}
+
+pre {
+  @apply border border-gray-200 p-2 rounded-md my-2 bg-gray-100 overflow-auto text-sm dark:bg-gray-900 dark:border-gray-800;
+}
+
+code {
+  @apply text-sm p-0.5 rounded bg-gray-100 dark:bg-gray-900;
+}

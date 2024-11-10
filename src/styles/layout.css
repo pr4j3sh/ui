@@ -1,0 +1,13 @@
+.container {
+  @apply m-auto max-w-lg flex flex-col gap-4 h-screen px-2 md:px-0;
+}
+
+section {
+  @apply flex flex-col gap-2;
+}
+
+article {
+}
+
+aside {
+}

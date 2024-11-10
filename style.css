@@ -1,18 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-body {
-  @apply bg-gray-50 text-gray-950 dark:bg-gray-950 dark:text-gray-50 transition-all ease-in-out;
-}
-
-svg {
-  @apply h-4 w-4;
-}
-
-.container {
-  @apply m-auto max-w-lg flex flex-col gap-4 h-screen px-2 md:px-0;
-}
+@import url("./src/styles/tailwind.css");
+@import url("./src/styles/root.css");
+@import url("./src/styles/layout.css");
+@import url("./src/styles/typography.css");
+@import url("./src/styles/media.css");
 
 nav {
   @apply my-4 flex items-center justify-between;
@@ -20,18 +10,6 @@ nav {
 
 main {
   @apply flex-grow flex flex-col gap-4;
-}
-
-pre {
-  @apply border border-gray-200 p-2 rounded-md my-2 bg-gray-100 overflow-auto text-sm dark:bg-gray-900 dark:border-gray-800;
-}
-
-code {
-  @apply text-sm p-0.5 rounded bg-gray-100 dark:bg-gray-900;
-}
-
-blockquote {
-  @apply border-l-gray-300 dark:border-l-gray-800  border-l-4 pl-2;
 }
 
 li a {
@@ -54,14 +32,14 @@ button {
   @apply p-1.5 bg-gray-100 hover:bg-gray-200 text-gray-950 dark:bg-gray-900 dark:text-gray-50 hover:dark:bg-gray-800;
 }
 
-section {
-  @apply flex flex-col gap-2;
-}
-
 .card {
   @apply border border-gray-200 dark:border-gray-800 rounded-md p-4 flex flex-col gap-4 bg-gray-100 dark:bg-gray-900;
 }
 
 footer {
   @apply py-4 flex items-center justify-between text-sm text-gray-700 dark:text-gray-400;
+}
+
+.btns {
+  @apply flex flex-row gap-2;
 }
