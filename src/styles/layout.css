@@ -11,3 +11,27 @@ article {
 
 aside {
 }
+
+nav {
+  @apply my-4 flex items-center justify-between;
+}
+
+main {
+  @apply flex-grow flex flex-col gap-4;
+}
+
+form {
+  @apply flex flex-col gap-2;
+}
+
+input {
+  @apply bg-gray-100 border border-gray-200 dark:border-gray-800 dark:bg-gray-900 px-2 py-1 rounded-md focus:outline-gray-400 dark:outline-gray-700 w-full;
+}
+
+hr {
+  @apply border border-gray-200 dark:border-gray-800 my-2;
+}
+
+footer {
+  @apply py-4 flex items-center justify-between text-sm text-gray-700 dark:text-gray-400;
+}
