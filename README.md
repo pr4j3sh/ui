@@ -58,11 +58,6 @@ import "./style.css";
 
 Try one of Frames' [templates](https://github.com/pr4j3sh/frames).
 
-## Get Started
-
-- [Get Started with Frames](https://pr4j3sh.github.io/ui/components/)
-- [GitHub Repository](https://github.com/pr4j3sh/js-tw)
-
 ## Read More
 
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs/utility-first)
