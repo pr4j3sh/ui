@@ -48,10 +48,34 @@ const items = [
         usage: `<b>Bold text</b>`,
       },
       {
+        title: "strong",
+        description: "Makes text bold for emphasis, implying importance.",
+        code: `<code>&lt;strong&gt;Strong text&lt;/strong&gt;</code>`,
+        usage: `<strong>Strong text</strong>`,
+      },
+      {
         title: "em",
         description: "Used to emphasize text, typically rendered in italics.",
         code: `<code>&lt;em&gt;Emphasized text&lt;/em&gt;</code>`,
         usage: `<em>Emphasized text</em>`,
+      },
+      {
+        title: "i",
+        description: "Used to render text in italics.",
+        code: `<code>&lt;i&gt;italics text&lt;/i&gt;</code>`,
+        usage: `<i>Italics text</i>`,
+      },
+      {
+        title: "small",
+        description: "Used to render small text.",
+        code: `<code>&lt;small&gt;small text&lt;/small&gt;</code>`,
+        usage: `<small>small text</small>`,
+      },
+      {
+        title: "code",
+        description: "Used to render inline code.",
+        code: `<code>&lt;code&gt;let a = 'a';&lt;/code&gt;</code>`,
+        usage: `<code>let a = 'a';</code>`,
       },
       {
         title: "a",
@@ -98,10 +122,22 @@ const items = [
         description:
           "Used to create an interactive form for collecting user input.",
         code: `<code>&lt;form&gt;
-  <code>&lt;input type="text" placeholder="email@example.com" /&gt;</code>
+  <code>&lt;input type="email" placeholder="email@example.com" /&gt;</code>
   <code>&lt;button type="submit"&gt;Submit&lt;/button&gt;</code>
 &lt;/form&gt;</code>`,
-        usage: `<form><input type="text" placeholder="email@example.com"/><button type="submit">Submit</button></form>`,
+        usage: `<form><input type="email" placeholder="email@example.com"/><button type="submit">Submit</button></form>`,
+      },
+      {
+        title: "input",
+        description: "Used to create an interactive input for form.",
+        code: `<code>&lt;input type="email" placeholder="email@example.com" /&gt;</code>`,
+        usage: `<input type="email" placeholder="email@example.com"/>`,
+      },
+      {
+        title: "textarea",
+        description: "Used to create an interactive textarea for form.",
+        code: `<code>&lt;textarea type="text" placeholder="Write something..." rows="5"&gt;&lt;/textarea&gt;</code>`,
+        usage: `<textarea type="text" placeholder="Write something..." rows="5"></textarea>`,
       },
       {
         title: "hr",
@@ -109,6 +145,43 @@ const items = [
           "Creates a horizontal rule or line, often used to separate content sections.",
         code: `<code>&lt;hr /&gt;</code>`,
         usage: `<hr />`,
+      },
+      {
+        title: "pre",
+        description: "Represents a self-contained piece of code.",
+        code: `<code>&lt;pre&gt;
+  <code>&lt;code&gt;let a = 'a';&lt;/code&gt;</code>
+  <code>&lt;code&gt;a = 'b';&lt;/code&gt;</code>
+&lt;/pre&gt;</code>`,
+        usage: `<pre><code>let a = 'a';</code>
+<code>a = 'b';</code></pre>`,
+      },
+      {
+        title: "li",
+        description: "Creates a list.",
+        code: `<code>&lt;ul&gt;</code>
+  <code>&lt;li&gt;One&lt;/li&gt;</code>
+  <code>&lt;li&gt;Two&lt;/li&gt;</code>
+  <code>&lt;li&gt;Three&lt;/li&gt;</code>
+<code>&lt;/ul&gt;</code>`,
+        usage: `<ul>
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+</ul>`,
+      },
+      {
+        title: "nav",
+        description:
+          "Defines the navbar section of a document or section, typically containing navigation menu.",
+        code: `<code>&lt;nav&gt;
+  <code>&lt;p&gt;pr4j3sh&lt;/p&gt;</code>
+  <code>&lt;ul class="btns"&gt;</code>
+    <code>&lt;p&gt;github&lt;/p&gt;</code>
+    <code>&lt;p&gt;twitter&lt;/p&gt;</code>
+  <code>&lt;/ul&gt;</code>
+&lt;/nav&gt;</code>`,
+        usage: `<nav><p>pr4j3sh</p><ul class="btns"><p>github</p><p>twitter</p></ul></nav>`,
       },
       {
         title: "footer",
@@ -119,6 +192,18 @@ const items = [
   <code>&lt;p&gt;twitter/github&lt;/p&gt;</code>
 &lt;/footer&gt;</code>`,
         usage: `<footer><p>&copy; pr4j3sh</p><p>twitter/github</p></footer>`,
+      },
+      {
+        title: "card",
+        description: "Defines a card.",
+        code: `<code>&lt;article class="body"&gt;
+  <code>&lt;img src="../public/banner.png" /&gt;</code>
+  <code>&lt;article class="card-body"&gt;</code>
+    <code>&lt;h6&gt;Card Title&lt;/h6&gt;</code>
+    <code>&lt;p&gt;This is a simple description.&lt;/p&gt;</code>
+  <code>&lt;article/&gt;</code>
+&lt;/article&gt;</code>`,
+        usage: `<article class="card"><img src="../public/banner.png" /><article class="card-body"><h6>Card Title</h6><p>This is a simple description.</p></article></card>`,
       },
     ],
   },
@@ -152,16 +237,15 @@ const items = [
         code: `<code>&lt;button class="icon"&gt;Click&lt;/button&gt;</code>`,
         usage: `<button class="icon">${darkIcon}</button>`,
       },
-    ],
-  },
-  {
-    section: "Media",
-    articles: [
       {
-        title: "",
-        description: "",
-        code: ``,
-        usage: ``,
+        title: "btns",
+        description:
+          "Creates a gap between a group of buttons arranging them in a row.",
+        code: `<code>&lt;article class="btns"&gt;</code>
+  <code>&lt;button&gt;Click&lt;/button&gt;</code>
+  <code>&lt;button class="secondary"&gt;Click&lt;/button&gt;</code>
+<code>&lt;/article&gt;</code>`,
+        usage: `<article class="btns"><button>Click</button><button class="secondary">Click</button></article>`,
       },
     ],
   },

@@ -1,6 +1,23 @@
 * {
 }
 
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 dark:bg-gray-700 rounded-lg;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500 dark:bg-gray-600;
+}
+
+*::-webkit-scrollbar-track {
+  @apply bg-gray-200 dark:bg-gray-800;
+}
+
 html {
 }
 
