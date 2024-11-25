@@ -1,4 +1,5 @@
 import { darkIcon } from "../assets/icons";
+import Banner from "../assets/images/banner.png";
 
 const items = [
   {
@@ -203,7 +204,7 @@ const items = [
     <code>&lt;p&gt;This is a simple description.&lt;/p&gt;</code>
   <code>&lt;article/&gt;</code>
 &lt;/article&gt;</code>`,
-        usage: `<article class="card"><img src="../public/banner.png" /><article class="card-body"><h6>Card Title</h6><p>This is a simple description.</p></article></card>`,
+        usage: `<article class="card"><img src="${Banner}" /><article class="card-body"><h6>Card Title</h6><p>This is a simple description.</p></article></card>`,
       },
     ],
   },
