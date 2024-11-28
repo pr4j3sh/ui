@@ -92,6 +92,12 @@ const items = [
         code: `<code>&lt;blockquote&gt;This is a quote.&lt;/blockquote&gt;</code>`,
         usage: `<blockquote>This is a quote.</blockquote>`,
       },
+      {
+        title: "tag",
+        description: "Used to represent a tag",
+        code: `<code>&lt;span class="tag"&gt;Tailwind&lt;/span&gt;</code>`,
+        usage: `<span class="tag">Tailwind</span>`,
+      },
     ],
   },
   {
