@@ -225,6 +225,12 @@ const items = [
         usage: `<button class="secondary">Click</button>`,
       },
       {
+        title: "small",
+        description: "Creates a small clickable button for user interaction.",
+        code: `<code>&lt;button class="small"&gt;Click&lt;/button&gt;</code>`,
+        usage: `<button class="small">Click</button>`,
+      },
+      {
         title: "danger",
         description:
           "Creates a clickable button of type danger for user interaction.",
