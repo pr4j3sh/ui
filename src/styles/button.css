@@ -15,7 +15,7 @@ button {
 }
 
 .btns {
-  @apply flex flex-row gap-2 items-center;
+  @apply flex flex-row gap-2 items-center flex-wrap;
 }
 
 .small {
