@@ -52,6 +52,10 @@ pre {
   @apply overflow-hidden border border-gray-200 dark:border-gray-800 rounded-md  flex flex-col gap-1 bg-gray-100 dark:bg-gray-900;
 }
 
+.card-img {
+  @apply rounded-none;
+}
+
 .card-body {
   @apply p-4;
 }

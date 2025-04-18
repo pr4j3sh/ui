@@ -204,13 +204,13 @@ const items = [
         title: "card",
         description: "Defines a card.",
         code: `<code>&lt;article class="card"&gt;
-  <code>&lt;img src="../public/banner.png" /&gt;</code>
+  <code>&lt;img class="card-img" src="../public/banner.png" /&gt;</code>
   <code>&lt;article class="card-body"&gt;</code>
     <code>&lt;h6&gt;Card Title&lt;/h6&gt;</code>
     <code>&lt;p&gt;This is a simple description.&lt;/p&gt;</code>
   <code>&lt;/article&gt;</code>
 &lt;/article&gt;</code>`,
-        usage: `<article class="card"><img src="${Banner}" /><article class="card-body"><h6>Card Title</h6><p>This is a simple description.</p></article></card>`,
+        usage: `<article class="card"><img class="card-img" src="${Banner}" /><article class="card-body"><h6>Card Title</h6><p>This is a simple description.</p></article></card>`,
       },
     ],
   },
