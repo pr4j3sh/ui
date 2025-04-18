@@ -1,3 +1,7 @@
 svg {
   @apply h-4 w-4;
 }
+
+img {
+  @apply rounded-md;
+}
