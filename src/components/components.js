@@ -212,6 +212,12 @@ const items = [
 &lt;/article&gt;</code>`,
         usage: `<article class="card"><img class="card-img" src="${Banner}" /><article class="card-body"><h6>Card Title</h6><p>This is a simple description.</p></article></card>`,
       },
+      {
+        title: "avatar",
+        description: "Displays an user avatar image.",
+        code: `<code>&lt;img src="../public/favicon.png" class="avatar" /&gt;</code>`,
+        usage: `<img src="../public/favicon.png" class="avatar" />`,
+      },
     ],
   },
   {
