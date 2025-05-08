@@ -1,6 +1,6 @@
 import { darkIcon } from "../assets/icons";
 import Banner from "../assets/images/banner.png";
-import Banner from "../assets/images/favicon.png";
+import Avatar from "../assets/images/favicon.png";
 
 const items = [
   {
