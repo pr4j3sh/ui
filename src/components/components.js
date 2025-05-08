@@ -1,5 +1,6 @@
 import { darkIcon } from "../assets/icons";
 import Banner from "../assets/images/banner.png";
+import Banner from "../assets/images/favicon.png";
 
 const items = [
   {
@@ -216,7 +217,7 @@ const items = [
         title: "avatar",
         description: "Displays an user avatar image.",
         code: `<code>&lt;img src="../public/favicon.png" class="avatar" /&gt;</code>`,
-        usage: `<img src="../public/favicon.png" class="avatar" />`,
+        usage: `<img src="${Avatar}" class="avatar" />`,
       },
     ],
   },
