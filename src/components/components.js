@@ -216,6 +216,46 @@ const items = [
         code: `<code>&lt;img src="../public/favicon.png" class="avatar" /&gt;</code>`,
         usage: `<img src="${Avatar}" class="avatar" />`,
       },
+      {
+        title: "table",
+        description: "Displays tabular data in rows and columns.",
+        code: `<code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Alice&lt;/td&gt;
+      &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Bob&lt;/td&gt;
+      &lt;td&gt;30&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code>`,
+        usage: `<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Alice</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Bob</td>
+      <td>30</td>
+    </tr>
+  </tbody>
+</table>`,
+      },
     ],
   },
   {
