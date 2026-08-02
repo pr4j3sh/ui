@@ -1,17 +1,21 @@
 button {
-  @apply py-1.5 px-4 bg-gray-900 hover:bg-gray-800 text-gray-50 rounded-lg font-semibold border border-gray-200 dark:border-gray-800 dark:bg-gray-50 dark:text-gray-900 hover:dark:bg-gray-200;
+  @apply py-1.5 px-4 bg-primary hover:bg-primary-hover text-on-primary rounded-lg font-semibold border border-border disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.primary {
+  @apply inline-flex items-center justify-center py-1.5 px-4 bg-primary hover:bg-primary-hover text-on-primary rounded-lg font-semibold border border-border disabled:opacity-50 disabled:cursor-not-allowed;
 }
 
 .secondary {
-  @apply bg-gray-100 hover:bg-gray-200 text-gray-950 dark:bg-gray-900 dark:text-gray-50 hover:dark:bg-gray-800;
+  @apply bg-surface hover:bg-surface-hover text-text;
 }
 
 .danger {
-  @apply bg-red-100 hover:bg-red-200 text-red-950 dark:bg-red-900 dark:text-red-50 hover:dark:bg-red-800 border-red-200 dark:border-red-800;
+  @apply bg-danger-subtle hover:bg-danger-border text-danger-text border-danger-border;
 }
 
 .icon {
-  @apply p-1.5 bg-gray-100 hover:bg-gray-200 text-gray-950 dark:bg-gray-900 dark:text-gray-50 hover:dark:bg-gray-800;
+  @apply p-1.5 bg-surface hover:bg-surface-hover text-text;
 }
 
 .btns {
@@ -20,4 +24,8 @@ button {
 
 .small {
   @apply py-0.5 px-2 rounded-md;
+}
+
+.large {
+  @apply py-2.5 px-6 rounded-lg;
 }

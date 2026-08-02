@@ -48,17 +48,17 @@ a {
 }
 
 .link {
-  @apply underline text-gray-500 dark:text-gray-400 hover:text-gray-600 hover:dark:text-gray-500;
+  @apply underline text-text-muted hover:text-text-muted-hover;
 }
 
 blockquote {
-  @apply border-l-gray-300 dark:border-l-gray-800  border-l-4 pl-2;
+  @apply border-l-border-muted border-l-4 pl-2;
 }
 
 code {
-  @apply text-sm px-1 py-0.5 rounded bg-gray-100 dark:bg-gray-900;
+  @apply text-sm px-1 py-0.5 rounded bg-surface;
 }
 
 .tag {
-  @apply px-1 py-0.5 rounded-md text-sm font-medium bg-gray-100 text-gray-950 dark:bg-gray-900 dark:text-gray-50 border border-gray-200 dark:border-gray-800;
+  @apply px-1 py-0.5 rounded-md text-sm font-medium bg-surface text-text border border-border;
 }

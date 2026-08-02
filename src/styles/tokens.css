@@ -1,0 +1,70 @@
+:root {
+   --c-bg: 249 250 251;
+  --c-surface: 243 244 246;
+  --c-surface-hover: 229 231 235;
+  --c-border: 229 231 235;
+  --c-border-muted: 209 213 219;
+  --c-text: 3 7 18;
+  --c-text-muted: 107 114 128;
+  --c-text-muted-hover: 75 85 99;
+  --c-text-subtle: 55 65 81;
+  --c-focus: 156 163 175;
+  --c-scrollbar-thumb-hover: 107 114 128;
+  --c-primary: 17 24 39;
+  --c-primary-hover: 31 41 55;
+  --c-on-primary: 249 250 251;
+
+  --c-success: 5 150 105;
+  --c-success-subtle: 209 250 229;
+  --c-success-border: 110 231 183;
+  --c-success-text: 6 78 59;
+  --c-warning: 217 119 6;
+  --c-warning-subtle: 254 243 199;
+  --c-warning-border: 253 230 138;
+  --c-warning-text: 69 26 3;
+  --c-danger: 220 38 38;
+  --c-danger-subtle: 254 226 226;
+  --c-danger-border: 254 202 202;
+  --c-danger-text: 69 10 10;
+
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+
+  --font-body: ui-sans-serif, system-ui, sans-serif;
+  --font-code: ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  color-scheme: light;
+}
+
+.dark {
+  --c-bg: 3 7 18;
+  --c-surface: 17 24 39;
+  --c-surface-hover: 31 41 55;
+  --c-border: 31 41 55;
+  --c-border-muted: 31 41 55;
+  --c-text: 249 250 251;
+  --c-text-muted: 156 163 175;
+  --c-text-muted-hover: 107 114 128;
+  --c-text-subtle: 156 163 175;
+  --c-focus: 55 65 81;
+  --c-scrollbar-thumb-hover: 75 85 99;
+  --c-primary: 249 250 251;
+  --c-primary-hover: 229 231 235;
+  --c-on-primary: 17 24 39;
+
+  --c-success: 52 211 153;
+  --c-success-subtle: 6 78 59;
+  --c-success-border: 6 95 70;
+  --c-success-text: 236 253 245;
+  --c-warning: 251 191 36;
+  --c-warning-subtle: 69 26 3;
+  --c-warning-border: 146 64 14;
+  --c-warning-text: 255 251 235;
+  --c-danger: 248 113 113;
+  --c-danger-subtle: 127 29 29;
+  --c-danger-border: 153 27 27;
+  --c-danger-text: 254 242 242;
+
+  color-scheme: dark;
+}

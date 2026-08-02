@@ -24,16 +24,8 @@ form {
   @apply flex flex-col gap-2;
 }
 
-input {
-  @apply bg-gray-100 border border-gray-200 dark:border-gray-800 dark:bg-gray-900 px-2 py-1 rounded-md focus:outline-gray-400 dark:outline-gray-700 w-full;
-}
-
-textarea {
-  @apply bg-gray-100 border border-gray-200 dark:border-gray-800 dark:bg-gray-900 px-2 py-1 rounded-md focus:outline-gray-400 dark:outline-gray-700 w-full;
-}
-
 hr {
-  @apply border border-gray-200 dark:border-gray-800 my-2;
+  @apply border border-border my-2;
 }
 
 ul {
@@ -45,11 +37,11 @@ li {
 }
 
 pre {
-  @apply border border-gray-200 p-2 rounded-md my-2 bg-gray-100 overflow-auto text-sm dark:bg-gray-900 dark:border-gray-800;
+  @apply border border-border p-2 rounded-md my-2 bg-surface overflow-auto text-sm;
 }
 
 .card {
-  @apply overflow-hidden border border-gray-200 dark:border-gray-800 rounded-md  flex flex-col gap-1 bg-gray-100 dark:bg-gray-900;
+  @apply overflow-hidden border border-border rounded-md flex flex-col gap-1 bg-surface;
 }
 
 .card-img {
@@ -66,9 +58,9 @@ table {
 
 th,
 td {
-  @apply border px-4 py-2 text-left border-gray-200 dark:border-gray-900;
+  @apply border px-4 py-2 text-left border-border;
 }
 
 footer {
-  @apply py-4 flex items-center justify-between text-sm text-gray-700 dark:text-gray-400;
+  @apply py-4 flex items-center justify-between text-sm text-text-subtle;
 }

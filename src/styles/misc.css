@@ -1,0 +1,70 @@
+kbd {
+  @apply rounded border border-border bg-surface px-1.5 py-0.5 font-mono text-xs text-text;
+  box-shadow: 0 2px 0 rgb(var(--c-border));
+}
+
+mark {
+  @apply rounded-sm bg-warning-subtle px-0.5 text-warning-text;
+}
+
+figure {
+  @apply flex flex-col gap-2;
+}
+
+figcaption {
+  @apply text-sm text-text-muted;
+}
+
+details {
+  @apply rounded-md border border-border bg-surface;
+}
+
+details > summary {
+  @apply flex cursor-pointer list-none items-center justify-between gap-2 px-4 py-3 text-sm font-medium text-text;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details > summary::after {
+  content: "";
+  @apply h-2 w-2 shrink-0 border-b-2 border-r-2 border-text-muted;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
+details[open] > summary::after {
+  transform: rotate(225deg);
+}
+
+details > div {
+  @apply border-t border-border px-4 py-3 text-sm text-text;
+}
+
+dialog {
+  @apply m-auto w-full max-w-md rounded-md border border-border bg-bg p-6 text-text;
+}
+
+dialog::backdrop {
+  background-color: rgb(3 7 18 / 0.5);
+}
+
+[data-tooltip] {
+  position: relative;
+  cursor: help;
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  @apply pointer-events-none absolute bottom-full left-1/2 z-10 mb-2 -translate-x-1/2 whitespace-nowrap rounded-md bg-primary px-2 py-1 text-xs text-on-primary;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.15s ease;
+}
+
+[data-tooltip]:hover::after,
+[data-tooltip]:focus-visible::after {
+  opacity: 1;
+  visibility: visible;
+}

@@ -1,0 +1,118 @@
+.alert {
+  @apply flex flex-col gap-1 rounded-md border px-4 py-3 text-sm;
+}
+
+.alert.info {
+  @apply bg-surface border-border text-text-muted;
+}
+
+.alert.success {
+  @apply bg-success-subtle border-success-border text-success-text;
+}
+
+.alert.error {
+  @apply bg-danger-subtle border-danger-border text-danger-text;
+}
+
+.alert.warning {
+  @apply bg-warning-subtle border-warning-border text-warning-text;
+}
+
+.badge {
+  @apply inline-flex items-center gap-1 rounded-md border border-border bg-surface px-2 py-0.5 text-xs font-medium text-text;
+}
+
+.badge.info {
+  @apply bg-surface border-border text-text-muted;
+}
+
+.badge.success {
+  @apply bg-success-subtle border-success-border text-success-text;
+}
+
+.badge.error {
+  @apply bg-danger-subtle border-danger-border text-danger-text;
+}
+
+.badge.warning {
+  @apply bg-warning-subtle border-warning-border text-warning-text;
+}
+
+.spinner {
+  @apply inline-block h-6 w-6 animate-spin rounded-full border-2 border-border;
+  border-top-color: rgb(var(--c-primary));
+}
+
+.skeleton {
+  @apply relative overflow-hidden rounded-md bg-surface-hover;
+}
+
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgb(var(--c-bg) / 0.4), transparent);
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+progress {
+  @apply h-2 w-full rounded-full bg-surface;
+  appearance: none;
+  border: none;
+}
+
+progress::-webkit-progress-bar {
+  @apply rounded-full bg-surface;
+}
+
+progress::-webkit-progress-value {
+  @apply rounded-full bg-primary;
+}
+
+progress::-moz-progress-bar {
+  @apply rounded-full bg-primary;
+}
+
+meter {
+  @apply h-2 w-full rounded-full;
+  appearance: none;
+  border: none;
+  background-color: rgb(var(--c-surface));
+}
+
+meter::-webkit-meter-bar {
+  border: none;
+  border-radius: 9999px;
+  background-color: rgb(var(--c-surface));
+}
+
+meter::-webkit-meter-optimum-value {
+  border-radius: 9999px;
+  background-color: rgb(var(--c-success));
+}
+
+meter::-webkit-meter-suboptimum-value {
+  border-radius: 9999px;
+  background-color: rgb(var(--c-warning));
+}
+
+meter::-webkit-meter-even-less-good-value {
+  border-radius: 9999px;
+  background-color: rgb(var(--c-danger));
+}
+
+meter::-moz-meter-bar {
+  border-radius: 9999px;
+  background-color: rgb(var(--c-success));
+}
+
+.empty {
+  @apply flex flex-col items-center justify-center gap-1 rounded-md border border-dashed border-border px-6 py-12 text-center text-sm text-text-muted;
+}

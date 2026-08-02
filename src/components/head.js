@@ -10,6 +10,7 @@ const metaTags = [
   { name: "charset", content: "UTF-8" },
   { rel: "icon", type: "image/svg+xml", href: imageUrl },
   { name: "viewport", content: "width=device-width, initial-scale=1.0" },
+  { name: "color-scheme", content: "light dark" },
   { name: "title", content: siteTitle },
   { name: "description", content: siteDescription },
   { property: "og:type", content: "website" },
