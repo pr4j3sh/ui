@@ -127,7 +127,7 @@ input[type="checkbox"].switch:checked {
 }
 
 input[type="checkbox"].switch:checked::before {
-  transform: translateX(0.8rem);
+  transform: translateX(0.5rem);
   background-color: rgb(var(--c-on-primary));
 }
 
@@ -143,52 +143,24 @@ select.input-lg {
   @apply px-3 py-2 text-base;
 }
 
-input.error,
-textarea.error,
-select.error,
-input[aria-invalid="true"],
-textarea[aria-invalid="true"],
-select[aria-invalid="true"] {
-  @apply border-danger;
+.error-text,
+.success-text,
+.warning-text {
+  @apply text-xs;
 }
 
-input.error:focus,
-textarea.error:focus,
-select.error:focus,
-input[aria-invalid="true"]:focus,
-textarea[aria-invalid="true"]:focus,
-select[aria-invalid="true"]:focus {
-  outline-color: rgb(var(--c-danger));
+.error-text {
+  @apply text-danger;
 }
 
-input.success,
-textarea.success,
-select.success {
-  @apply border-success;
+.success-text {
+  @apply text-success;
 }
 
-input.success:focus,
-textarea.success:focus,
-select.success:focus {
-  outline-color: rgb(var(--c-success));
-}
-
-input.warning,
-textarea.warning,
-select.warning {
-  @apply border-warning;
-}
-
-input.warning:focus,
-textarea.warning:focus,
-select.warning:focus {
-  outline-color: rgb(var(--c-warning));
+.warning-text {
+  @apply text-warning;
 }
 
 .hint {
   @apply text-xs text-text-muted;
-}
-
-.error-text {
-  @apply text-xs text-danger-text;
 }

@@ -60,5 +60,21 @@ code {
 }
 
 .tag {
-  @apply px-1 py-0.5 rounded-md text-sm font-medium bg-surface text-text border border-border;
+  @apply inline-flex items-center gap-1 rounded-md border border-border bg-surface px-2 py-0.5 text-xs font-medium text-text;
+}
+
+.tag.info {
+  @apply bg-surface border-border text-text-muted;
+}
+
+.tag.success {
+  @apply bg-success-subtle border-success-border text-success-text;
+}
+
+.tag.error {
+  @apply bg-danger-subtle border-danger-border text-danger-text;
+}
+
+.tag.warning {
+  @apply bg-warning-subtle border-warning-border text-warning-text;
 }

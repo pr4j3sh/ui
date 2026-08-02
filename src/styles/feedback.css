@@ -18,26 +18,6 @@
   @apply bg-warning-subtle border-warning-border text-warning-text;
 }
 
-.badge {
-  @apply inline-flex items-center gap-1 rounded-md border border-border bg-surface px-2 py-0.5 text-xs font-medium text-text;
-}
-
-.badge.info {
-  @apply bg-surface border-border text-text-muted;
-}
-
-.badge.success {
-  @apply bg-success-subtle border-success-border text-success-text;
-}
-
-.badge.error {
-  @apply bg-danger-subtle border-danger-border text-danger-text;
-}
-
-.badge.warning {
-  @apply bg-warning-subtle border-warning-border text-warning-text;
-}
-
 .spinner {
   @apply inline-block h-6 w-6 animate-spin rounded-full border-2 border-border;
   border-top-color: rgb(var(--c-primary));

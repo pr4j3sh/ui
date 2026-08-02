@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "style": "npx tailwindcss -i ./style.css -o ./public/style.css"
+    "style": "npx tailwindcss -i ./src/style.css -o ./public/style.css"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",

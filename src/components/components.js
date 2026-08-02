@@ -9,37 +9,37 @@ const items = [
       {
         title: "h1",
         description: "Defines the largest and most important heading.",
-        code: `<code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code>`,
+        code: `<code>&lt;h1&gt;h1&lt;/h1&gt;</code>`,
         usage: `<h1>h1</h1>`,
       },
       {
         title: "h2",
         description: "Defines the second-largest heading.",
-        code: `<code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code>`,
+        code: `<code>&lt;h2&gt;h2&lt;/h2&gt;</code>`,
         usage: `<h2>h2</h2>`,
       },
       {
         title: "h3",
         description: "Defines the third-largest heading.",
-        code: `<code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code>`,
+        code: `<code>&lt;h3&gt;h3&lt;/h3&gt;</code>`,
         usage: `<h3>h3</h3>`,
       },
       {
         title: "h4",
         description: "Defines the fourth-largest heading.",
-        code: `<code>&lt;h4&gt;Heading 4&lt;/h4&gt;</code>`,
+        code: `<code>&lt;h4&gt;h4&lt;/h4&gt;</code>`,
         usage: `<h4>h4</h4>`,
       },
       {
         title: "h5",
         description: "Defines the fifth-largest heading.",
-        code: `<code>&lt;h5&gt;Heading 5&lt;/h5&gt;</code>`,
+        code: `<code>&lt;h5&gt;h5&lt;/h5&gt;</code>`,
         usage: `<h5>h5</h5>`,
       },
       {
         title: "h6",
         description: "Defines the smallest and least important heading.",
-        code: `<code>&lt;h6&gt;Heading 6&lt;/h6&gt;</code>`,
+        code: `<code>&lt;h6&gt;h6&lt;/h6&gt;</code>`,
         usage: `<h6>h6</h6>`,
       },
       {
@@ -63,7 +63,7 @@ const items = [
       {
         title: "i",
         description: "Used to render text in italics.",
-        code: `<code>&lt;i&gt;italics text&lt;/i&gt;</code>`,
+        code: `<code>&lt;i&gt;Italics text&lt;/i&gt;</code>`,
         usage: `<i>Italics text</i>`,
       },
       {
@@ -81,7 +81,7 @@ const items = [
       {
         title: "a",
         description: "Used to create hyperlinks to navigate to other pages or resources.",
-        code: `<code>&lt;a class="link" href="/"&gt;Link&lt;/a&gt;</code>`,
+        code: `<code>&lt;a class="link" href="/ui/components/"&gt;Link&lt;/a&gt;</code>`,
         usage: `<a class="link" href="/ui/components/">Link</a>`,
       },
       {
@@ -93,8 +93,11 @@ const items = [
       {
         title: "tag",
         description: "Used to represent a tag",
-        code: `<code>&lt;span class="tag"&gt;Tailwind&lt;/span&gt;</code>`,
-        usage: `<span class="tag">Tailwind</span>`,
+        code: `<code>&lt;span class="tag"&gt;Tag&lt;/span&gt;
+&lt;span class="tag success"&gt;Success&lt;/span&gt;
+&lt;span class="tag error"&gt;Error&lt;/span&gt;
+&lt;span class="tag warning"&gt;Warning&lt;/span&gt;</code>`,
+        usage: `<span class="tag">Tag</span> <span class="tag success">Success</span> <span class="tag error">Error</span> <span class="tag warning">Warning</span>`,
       },
     ],
   },
@@ -119,7 +122,7 @@ const items = [
   <code>&lt;b&gt;Title&lt;/b&gt;</code>
   <code>&lt;p&gt;This is a sample paragraph.&lt;/p&gt;</code>
 &lt;/article&gt;</code>`,
-        usage: `<article><b>Title</b><p>This is sample paragraph.</p></article>`,
+        usage: `<article><b>Title</b><p>This is a sample paragraph.</p></article>`,
       },
       {
         title: "form",
@@ -128,13 +131,13 @@ const items = [
   <code>&lt;input type="email" placeholder="email@example.com" /&gt;</code>
   <code>&lt;button type="submit"&gt;Submit&lt;/button&gt;</code>
 &lt;/form&gt;</code>`,
-        usage: `<form><input type="email" placeholder="email@example.com"/><button type="submit">Submit</button></form>`,
+        usage: `<form><input type="email" placeholder="email@example.com" /><button type="submit">Submit</button></form>`,
       },
       {
         title: "input",
         description: "Used to create an interactive input for form.",
         code: `<code>&lt;input type="email" placeholder="email@example.com" /&gt;</code>`,
-        usage: `<input type="email" placeholder="email@example.com"/>`,
+        usage: `<input type="email" placeholder="email@example.com" />`,
       },
       {
         title: "textarea",
@@ -223,7 +226,7 @@ const items = [
         description: "Text inputs with an associated label.",
         code: `<code>&lt;label for="name"&gt;Name&lt;/label&gt;
 &lt;input type="text" id="name" placeholder="John Doe" /&gt;</code>`,
-        usage: `<label for="demo-name">Name</label><input type="text" id="demo-name" placeholder="John Doe"/>`,
+        usage: `<label for="name">Name</label><input type="text" id="name" placeholder="John Doe" />`,
       },
       {
         title: "select",
@@ -231,6 +234,7 @@ const items = [
         code: `<code>&lt;select&gt;
   &lt;option&gt;Option 1&lt;/option&gt;
   &lt;option&gt;Option 2&lt;/option&gt;
+  &lt;option&gt;Option 3&lt;/option&gt;
 &lt;/select&gt;</code>`,
         usage: `<select><option>Option 1</option><option>Option 2</option><option>Option 3</option></select>`,
       },
@@ -244,7 +248,7 @@ const items = [
         title: "radio",
         description: "Lets the user select a single option from a group.",
         code: `<code>&lt;input type="radio" name="group" /&gt;</code>`,
-        usage: `<input type="radio" name="demo-group" />`,
+        usage: `<input type="radio" name="group" />`,
       },
       {
         title: "switch",
@@ -260,28 +264,36 @@ const items = [
   &lt;label for="email"&gt;Email&lt;/label&gt;
   &lt;input type="email" id="email" placeholder="email@example.com" /&gt;
 &lt;/fieldset&gt;</code>`,
-        usage: `<fieldset><legend>Contact</legend><label for="demo-email">Email</label><input type="email" id="demo-email" placeholder="email@example.com"/></fieldset>`,
+        usage: `<fieldset><legend>Contact</legend><label for="email">Email</label><input type="email" id="email" placeholder="email@example.com" /></fieldset>`,
       },
       {
         title: "validation",
-        description: "Error, success and warning states via aria-invalid or a class.",
-        code: `<code>&lt;input type="email" aria-invalid="true" /&gt;
-&lt;p class="error-text"&gt;Enter a valid email&lt;/p&gt;</code>`,
-        usage: `<input type="email" aria-invalid="true" value="bad"/><p class="error-text">Enter a valid email</p><input type="text" class="success" value="Looks good"/><input type="text" class="warning" value="Almost there"/>`,
+        description: "Error, success and warning states indicated by helper text below the field.",
+        code: `<code>&lt;section&gt;
+  &lt;input type="email" aria-invalid="true" placeholder="Email" /&gt;
+  &lt;p class="error-text"&gt;Enter a valid email&lt;/p&gt;
+  &lt;input type="text" placeholder="Username" /&gt;
+  &lt;p class="success-text"&gt;Username is available&lt;/p&gt;
+  &lt;input type="text" placeholder="Password" /&gt;
+  &lt;p class="warning-text"&gt;Password must be 8+ characters&lt;/p&gt;
+&lt;/section&gt;</code>`,
+        usage: `<section><input type="email" aria-invalid="true" placeholder="Email" /><p class="error-text">Enter a valid email</p><input type="text" placeholder="Username" /><p class="success-text">Username is available</p><input type="text" placeholder="Password" /><p class="warning-text">Password must be 8+ characters</p></section>`,
       },
       {
         title: "disabled",
         description: "Disables a control so it cannot be interacted with.",
-        code: `<code>&lt;input type="text" disabled /&gt;</code>`,
-        usage: `<input type="text" placeholder="Disabled" disabled/><button disabled>Disabled button</button>`,
+        code: `<code>&lt;input type="text" placeholder="Disabled" disabled /&gt;</code>`,
+        usage: `<input type="text" placeholder="Disabled" disabled />`,
       },
       {
         title: "sizes",
         description: "Inputs and textareas come in small and large sizes.",
-        code: `<code>&lt;input type="text" class="input-sm" /&gt;
-&lt;input type="text" /&gt;
-&lt;input type="text" class="input-lg" /&gt;</code>`,
-        usage: `<input type="text" class="input-sm" placeholder="Small"/><input type="text" placeholder="Medium"/><input type="text" class="input-lg" placeholder="Large"/>`,
+        code: `<code>&lt;section&gt;
+  &lt;input type="text" class="input-sm" placeholder="Small" /&gt;
+  &lt;input type="text" placeholder="Medium" /&gt;
+  &lt;input type="text" class="input-lg" placeholder="Large" /&gt;
+&lt;/section&gt;</code>`,
+        usage: `<section><input type="text" class="input-sm" placeholder="Small" /><input type="text" placeholder="Medium" /><input type="text" class="input-lg" placeholder="Large" /></section>`,
       },
     ],
   },
@@ -313,9 +325,15 @@ const items = [
         usage: `<button class="large">Click</button>`,
       },
       {
+        title: "disabled",
+        description: "Disables a button so it cannot be interacted with.",
+        code: `<code>&lt;button disabled&gt;Click&lt;/button&gt;</code>`,
+        usage: `<button disabled>Click</button>`,
+      },
+      {
         title: "primary",
         description: "Applies the primary button style to any element.",
-        code: `<code>&lt;a class="primary"&gt;Click&lt;/a&gt;</code>`,
+        code: `<code>&lt;a class="primary" href="#"&gt;Click&lt;/a&gt;</code>`,
         usage: `<a class="primary" href="#">Click</a>`,
       },
       {
@@ -356,16 +374,12 @@ const items = [
       {
         title: "alert variants",
         description: "Success, error and warning variants.",
-        code: `<code>&lt;article class="alert success"&gt;...&lt;/article&gt;
-&lt;article class="alert error"&gt;...&lt;/article&gt;
-&lt;article class="alert warning"&gt;...&lt;/article&gt;</code>`,
-        usage: `<article class="alert success"><p>Operation completed successfully.</p></article><article class="alert error"><p>Something went wrong.</p></article><article class="alert warning"><p>Please review your settings.</p></article>`,
-      },
-      {
-        title: "badge",
-        description: "A small label for counts, statuses or attributes.",
-        code: `<code>&lt;span class="badge"&gt;Badge&lt;/span&gt;</code>`,
-        usage: `<span class="badge">Badge</span> <span class="badge success">Success</span> <span class="badge error">Error</span> <span class="badge warning">Warning</span>`,
+        code: `<code>&lt;section&gt;
+  &lt;article class="alert success"&gt;&lt;p&gt;Operation completed successfully.&lt;/p&gt;&lt;/article&gt;
+  &lt;article class="alert error"&gt;&lt;p&gt;Something went wrong.&lt;/p&gt;&lt;/article&gt;
+  &lt;article class="alert warning"&gt;&lt;p&gt;Please review your settings.&lt;/p&gt;&lt;/article&gt;
+&lt;/section&gt;</code>`,
+        usage: `<section><article class="alert success"><p>Operation completed successfully.</p></article><article class="alert error"><p>Something went wrong.</p></article><article class="alert warning"><p>Please review your settings.</p></article></section>`,
       },
       {
         title: "spinner",
@@ -376,21 +390,18 @@ const items = [
       {
         title: "skeleton",
         description: "A placeholder while content loads.",
-        code: `<code>&lt;div class="skeleton h-4 w-full"&gt;&lt;/div&gt;
-&lt;div class="skeleton h-4 w-2/3"&gt;&lt;/div&gt;</code>`,
-        usage: `<div class="skeleton h-4 w-full"></div><div class="skeleton h-4 w-2/3"></div><div class="skeleton h-24 w-full"></div>`,
+        code: `<code>&lt;section&gt;
+  &lt;div class="skeleton h-4 w-full"&gt;&lt;/div&gt;
+  &lt;div class="skeleton h-4 w-2/3"&gt;&lt;/div&gt;
+  &lt;div class="skeleton h-24 w-full"&gt;&lt;/div&gt;
+&lt;/section&gt;</code>`,
+        usage: `<section><div class="skeleton h-4 w-full"></div><div class="skeleton h-4 w-2/3"></div><div class="skeleton h-24 w-full"></div></section>`,
       },
       {
         title: "progress",
         description: "Shows the completion progress of a task.",
         code: `<code>&lt;progress value="70" max="100"&gt;70%&lt;/progress&gt;</code>`,
         usage: `<progress value="70" max="100">70%</progress>`,
-      },
-      {
-        title: "meter",
-        description: "Displays a scalar measurement within a known range.",
-        code: `<code>&lt;meter value="0.7"&gt;70%&lt;/meter&gt;</code>`,
-        usage: `<meter value="0.7">70%</meter><meter value="0.9">90%</meter>`,
       },
       {
         title: "empty",
@@ -429,22 +440,13 @@ const items = [
         usage: `<details><summary>Click to expand</summary><div><p>Hidden content goes here.</p></div></details>`,
       },
       {
-        title: "dialog",
-        description: "A modal dialog shown via the open attribute.",
-        code: `<code>&lt;dialog open&gt;
-  &lt;b&gt;Dialog&lt;/b&gt;
-  &lt;p&gt;This is a modal dialog.&lt;/p&gt;
-&lt;/dialog&gt;</code>`,
-        usage: `<dialog open><b>Dialog</b><p>This is a modal dialog.</p></dialog>`,
-      },
-      {
         title: "figure",
         description: "Represents media with a caption.",
         code: `<code>&lt;figure&gt;
   &lt;img src="favicon.png" class="avatar" /&gt;
   &lt;figcaption&gt;The Frames mascot&lt;/figcaption&gt;
 &lt;/figure&gt;</code>`,
-        usage: `<figure><img src="${Avatar}" class="avatar"/><figcaption>The Frames mascot</figcaption></figure>`,
+        usage: `<figure><img src="${Avatar}" class="avatar" /><figcaption>The Frames mascot</figcaption></figure>`,
       },
       {
         title: "tooltip",

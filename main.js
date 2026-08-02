@@ -1,4 +1,4 @@
-import "./style.css";
+import "./src/style.css";
 import "./src/components/head";
 import "./src/components/navbar";
 import "./src/lib/theme";
