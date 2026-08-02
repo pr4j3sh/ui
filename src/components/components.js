@@ -44,8 +44,7 @@ const items = [
       },
       {
         title: "b",
-        description:
-          "Makes text bold for emphasis without implying importance.",
+        description: "Makes text bold for emphasis without implying importance.",
         code: `<code>&lt;b&gt;Bold text&lt;/b&gt;</code>`,
         usage: `<b>Bold text</b>`,
       },
@@ -81,15 +80,13 @@ const items = [
       },
       {
         title: "a",
-        description:
-          "Used to create hyperlinks to navigate to other pages or resources.",
+        description: "Used to create hyperlinks to navigate to other pages or resources.",
         code: `<code>&lt;a class="link" href="/"&gt;Link&lt;/a&gt;</code>`,
         usage: `<a class="link" href="/ui/components/">Link</a>`,
       },
       {
         title: "blockquote",
-        description:
-          "Used to define a section of content that is quoted from another source.",
+        description: "Used to define a section of content that is quoted from another source.",
         code: `<code>&lt;blockquote&gt;This is a quote.&lt;/blockquote&gt;</code>`,
         usage: `<blockquote>This is a quote.</blockquote>`,
       },
@@ -106,8 +103,7 @@ const items = [
     articles: [
       {
         title: "section",
-        description:
-          "Defines a section of content, typically with a heading, within a document.",
+        description: "Defines a section of content, typically with a heading, within a document.",
         code: `<code>&lt;section&gt;
   <code>&lt;p&gt;Paragraph one&lt;/p&gt;</code>
   <code>&lt;p&gt;Paragraph two&lt;/p&gt;</code>
@@ -127,8 +123,7 @@ const items = [
       },
       {
         title: "form",
-        description:
-          "Used to create an interactive form for collecting user input.",
+        description: "Used to create an interactive form for collecting user input.",
         code: `<code>&lt;form&gt;
   <code>&lt;input type="email" placeholder="email@example.com" /&gt;</code>
   <code>&lt;button type="submit"&gt;Submit&lt;/button&gt;</code>
@@ -149,8 +144,7 @@ const items = [
       },
       {
         title: "hr",
-        description:
-          "Creates a horizontal rule or line, often used to separate content sections.",
+        description: "Creates a horizontal rule or line, often used to separate content sections.",
         code: `<code>&lt;hr /&gt;</code>`,
         usage: `<hr />`,
       },
@@ -249,9 +243,8 @@ const items = [
       {
         title: "radio",
         description: "Lets the user select a single option from a group.",
-        code: `<code>&lt;input type="radio" name="group" /&gt;
-&lt;input type="radio" name="group" /&gt;</code>`,
-        usage: `<input type="radio" name="demo-group" /><input type="radio" name="demo-group" />`,
+        code: `<code>&lt;input type="radio" name="group" /&gt;</code>`,
+        usage: `<input type="radio" name="demo-group" />`,
       },
       {
         title: "switch",
@@ -303,8 +296,7 @@ const items = [
       },
       {
         title: "secondary",
-        description:
-          "Creates a clickable button of type secondary for user interaction.",
+        description: "Creates a clickable button of type secondary for user interaction.",
         code: `<code>&lt;button class="secondary"&gt;Click&lt;/button&gt;</code>`,
         usage: `<button class="secondary">Click</button>`,
       },
@@ -328,22 +320,19 @@ const items = [
       },
       {
         title: "danger",
-        description:
-          "Creates a clickable button of type danger for user interaction.",
+        description: "Creates a clickable button of type danger for user interaction.",
         code: `<code>&lt;button class="danger"&gt;Click&lt;/button&gt;</code>`,
         usage: `<button class="danger">Click</button>`,
       },
       {
         title: "icon",
-        description:
-          "Creates a clickable button of type icon for user interaction.",
+        description: "Creates a clickable button of type icon for user interaction.",
         code: `<code>&lt;button class="icon"&gt;Click&lt;/button&gt;</code>`,
         usage: `<button class="icon">${darkIcon}</button>`,
       },
       {
         title: "btns",
-        description:
-          "Creates a gap between a group of buttons arranging them in a row.",
+        description: "Creates a gap between a group of buttons arranging them in a row.",
         code: `<code>&lt;article class="btns"&gt;</code>
   <code>&lt;button&gt;Click&lt;/button&gt;</code>
   <code>&lt;button class="secondary"&gt;Click&lt;/button&gt;</code>

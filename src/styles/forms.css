@@ -127,7 +127,7 @@ input[type="checkbox"].switch:checked {
 }
 
 input[type="checkbox"].switch:checked::before {
-  transform: translateX(1rem);
+  transform: translateX(0.8rem);
   background-color: rgb(var(--c-on-primary));
 }
 
